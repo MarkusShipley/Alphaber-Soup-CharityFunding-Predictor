@@ -1,5 +1,6 @@
 ## Deep Learning Homework: Charity Funding Predictor
 Note:  Observations also captured at the end of the each Jupyter Notebook as well.
+
 ## Details and Observations
 The assignment consists of three Jupyter Notebooks: 1) AlphabetSourCharityModel.ipynb  2) AlphabetSourCharity-OptimizeModel.ipynb 3) AlphabetSourCharity-OptimizeModel2.ipynb
 
