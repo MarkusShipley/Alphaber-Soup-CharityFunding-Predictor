@@ -1,8 +1,36 @@
 # Deep Learning Homework: Charity Funding Predictor
+Note:  Observations also captured at the end of the each Jupyter Notebook as well.
+##Details and Observations
+The assignment consists of three Jupyter Notebooks: 1) AlphabetSourCharityModel.ipynb  2) AlphabetSourCharity-OptimizeModel.ipynb 3) AlphabetSourCharity-OptimizeModel2.ipynb
 
-## Background
+1 and 2 met the requirements of the homework.  However, I wanted to "play around" with some of the settings of the Optimization Model and analyze the resuls.
 
+##AlphabetSourCharityModel.ipynb CONCLUSION: 
+Accuracy is 72.21% and loss was 57.6% Accuracy could or may have gone up with more epochs and time to learn. 
+Howevver, with this model we are/were able to predict approximately 72% of the campaigns or organizations that would be successful. 
+In step 3 (next part of the homework assignment), we are going to attempt to optimize the model
+
+##AlphabetSourCharity-OptimizeModel.ipynb CONCLUSION
+CONCLUSION: Accuracy for the opti,ized model is 79.07% and loss was 40.02% With this model we are/were able to predict approximately 79% of the campaigns or organizations that would be successful. 
+We achieved a target predictive accuracy higher than 75% by dropping the "STATUS" and "SPECIAL CONSIDERATIONS" Columns. 
+However, we retained the "NAME" column in case name sake or reputation were part of the success of the campaign. 
+Several changes were made to the model: 1) Changed the layer1Nodes to 100 2) Added a third set of nodes with a value of 30. Thus, we had three hidden nodes with node values for 100, 30 and 10, respectively; 
+3) The activation for the second hidden layer was change from 'relu" to 'sigmoid'.
+
+##AlphabetSourCharity-OptimizeModel2.ipynb CONCLUSION
+Accuracy for the second/"fun" optimized model is 79.03 and loss was 45.21%  With this model we are/were able to predict approximately 79% of the campaigns or organizations that would be successful. 
+As written earlier, the other/first optimization met the homework requirements of generating a model wtih accuracy greater than 75%.  
+This model is just for fun and to "learn"/"see" the impact of making changed to the just some of the model settings.  
+
+Changes were made to the model as follows: 1) layer1Nodes = 200,  2) layer2Nodes = 75,  3) layer3Nodes = 50  4) epochs = 300.
+I do find it interesting that the substantial increase in nodes and increasing the epochs from 100 to 300 yielded a .04% less  accurate model.  
+I wish I had more time to "play" with this homework.  I would determine other columns to drop or add back, add additional hidden layers and used differing activations.  
+I wish this was a year long boot camp so we had the time to start getting into the math, etc. behind all of this. 
+
+I write this with every homework, but this one was my favorite so far.  Only one more homework and the final project.  I wish I could have had Dr Arrington for the full term.  I have learned a great deal from him and will always be grateful for that which he has taught.
 The non-profit foundation Alphabet Soup wants to create an algorithm to predict whether or not applicants for funding will be successful. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+
+##Homework Requirements
 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
